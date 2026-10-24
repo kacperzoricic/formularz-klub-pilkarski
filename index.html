@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Rejestracja do klubu piłkarskiego</h1>
+ 
+<form action="https://formsubmit.co/kacper.zoricic@gmail.com"
+      method="POST">
+    
+    
+ <h2>Dane osobowe</h2>
+<label for="Imie"></label><br />
+ <input type="text" id="Imie" name="Imie"  placeholder="Wpisz imie" />
+
+<label for="Nazwisko"></label><br />
+<input type="text" id="Nazwisko" name="Nazwisko" placeholder="Wpisz nazwisko" />
+
+<label for="email"></label><br />
+<input type="text" id="email" name="email" placeholder="Wpisz email" required />
+
+<label for="Nr. telefonu"></label><br />
+<input type="text" id="Nr. telefonu" name="Nr. telefonu" placeholder="Wpisz nr. telefonu"/>
+
+<h2>Informacje o zawodniku</h2>
+<label for="Pozycja">Wybierz pozycję na boisku:></label><br />
+<select id="Pozycja" name="Pozycja" required> 
+<option value="">-- Wybierz pozycję --</option>
+<option value="Bramkarz">Bramkarz</option>
+<option value="Obrońca">Obrońca</option>
+<option value="Pomocnik">Pomocnik</option>
+<option value="Napastnik">Napastnik</option> </select><br><br>
+
+<p>Jak długo grasz w piłkę?</p>
+<input type="radio" id="Początek" name="Doświadczenie" value="Początek" required>
+<label for="Początek">Dopiero zaczynam</label><br>
+
+<input type="radio" id="Rok" name="Doświadczenie" value="Rok" required>
+<label for="Doświadczenie">Rok</label><br> 
+
+<input type="radio" id="długo" name="Doświadczenie" value="długo" required>
+<label for="długo">Ponad 3 lata</label><br>
+
+<p>W jakie dni możesz trenować?</p>
+<input type="checkbox" id="pon" name="dni" value="pon">
+<label for="pon">Poniedziłek</label><br>
+
+<input type="checkbox" id="śr" name="dni" value="śr">
+<label for="">Środa</label><br>
+
+<input type="checkbox" id="Pt" name="dni" value="Pt">
+<label for="">Piątek</label><br><br>
+
+<label for="opis">Napisz coś o sobie:</label><br>
+<textarea id="opis" name="opis" rows="4" cols="35" placeholder="Opisz swoje Doświadczenie"></textarea><br><br>
+
+<label for="haslo">Utwórz hasło</label><br>
+<input type="password" id="haslo" name="haslo" placeholder="Wpisz hasło" required><br><br>
+
+<input type="checkbox" id="zgoda" name="zgoda" required>
+<label for="zgoda">Potwierdzam poprawność danych.</label><br><br>
+<input type="submit" value="Wyślij formularz">
+<input type="reset" value="Wyczyść formularz">
+    </form>
+</body>
+</html>
